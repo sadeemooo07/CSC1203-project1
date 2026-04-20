@@ -1,103 +1,116 @@
-## 🎓 Student Management System
+# 🎓 Student Management System
 
 ## 📌 Overview
-This project is a Student Management System developed using Python.  
-It demonstrates key Object-Oriented Programming (OOP) concepts such as classes, inheritance, encapsulation, along with file handling.
-
-The system allows users to manage student records through a simple and interactive menu.
+This project is a Student Management System developed using Python. 
+It demonstrates Object-Oriented Programming (OOP) concepts such as classes, inheritance, encapsulation, and file handling.
 
 ---
 
-## 🎯 Objectives
-- Apply OOP concepts in a real-world scenario  
-- Implement inheritance between classes  
-- Use encapsulation to protect data  
-- Store and retrieve data using a text file  
+## 🧠 Code Explanation
+
+### 🔹 Class: Person
+```python
+class Person:
+```
+This is the parent class that represents a general person.
+
+```python
+def __init__(self, name, student_id):
+```
+Constructor used to initialize name and ID.
+
+```python
+self.name = name
+```
+Stores the name as a public attribute.
+
+```python
+self.__student_id = student_id
+```
+Stores the student ID as a private attribute (Encapsulation).
 
 ---
 
-## ⚙️ Features
-- ➕ Add a new student  
-- ❌ Delete an existing student  
-- ✏️ Update student information  
-- 👀 Display all students  
-- 💾 Save data to a file  
-- 📂 Load data automatically at startup  
+### 🔹 Getter and Setter
+```python
+def get_id(self):
+```
+Returns the private ID.
+
+```python
+def set_id(self, new_id):
+```
+Updates the private ID.
 
 ---
 
-## 🧠 OOP Concepts Used
+### 🔹 Class: Student
+```python
+class Student(Person):
+```
+Child class that inherits from Person.
 
-### 1. Classes & Objects
-- Person class (Parent)  
-- Student class (Child)
+```python
+super().__init__(name, student_id)
+```
+Calls the parent constructor.
 
-### 2. Inheritance
-- Student inherits from Person  
-
-### 3. Encapsulation
-- Private attribute: __student_id  
-- Accessed using getter and setter methods  
+```python
+self.grade = grade
+```
+Stores student grade.
 
 ---
 
-## 📁 File Handling
-- Data is stored in a file named data.txt  
-- The program:
-  - Reads data at startup  
-  - Writes data when exiting  
+### 🔹 File Handling
+```python
+open("data.txt", "r")
+```
+Reads data from file.
+
+```python
+open("data.txt", "w")
+```
+Writes data to file.
+
+---
+
+### 🔹 Functions (Operations)
+
+#### Add Student
+Adds a new student after validating input.
+
+#### Delete Student
+Removes a student using ID.
+
+#### Update Student
+Modifies student data.
+
+#### Display Students
+Prints all student information.
+
+#### Delete All Data
+This feature allows the user to delete all stored data from the file at once,
+clearing the entire student database with a single action.
+
+---
+
+### 🔹 Main Function
+Controls the program using a menu system.
 
 ---
 
 ## ▶️ How to Run
-```
+
+```bash
 python project.py
 ```
----
 
-## 🧪 Example Code
-```
-s = Student("Ali", "123", 90)
-s.display()
-```
----
-
-## 🖥️ Sample Output
-```
---- Student Management System ---
-1. Add Student
-2. Delete Student
-3. Update Student
-4. Display Students
-5. Exit
-```
----
-
-## 📂 Project Structure
-```
-project/
-│
-├── project.py     # Main program file
-├── data.txt       # Stores student data
-└── README.md      # Project documentation
-```
----
-
-## 🚀 Future Improvements
-- 🔍 Add search functionality  
-- 🎨 Improve user interface (GUI)  
-- 🗄️ Use a database instead of text file  
-- 📊 Add sorting and filtering options  
-
----
 ---
 
 ## 👩‍💻 Team Members
-- Sadeem Abdullah
-- Maryam waheed
-- Afrah enazy
-- Aseel saad
-- Haya enazy
-
-## ⭐ Notes
-This project was created as part of a programming course to demonstrate practical implementation of OOP concepts in Python.
+-Sadeem abdullah
+-Maryam waheed
+-Afrah enazy
+-Aseel enazy
+-Haya enazy
