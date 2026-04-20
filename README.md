@@ -103,7 +103,7 @@ Controls the program using a menu system.
 ## ▶️ How to Run
 
 ```bash
-python project.py
+project1.py
 ```
 
 ---
