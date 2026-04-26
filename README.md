@@ -102,22 +102,22 @@ Controls the program using a menu system.
 ## 🖼️ Output Screenshots
 
 ### 🔹 Main Menu
-![Main Menu](images/menu.png)
+![Main Menu](images/menu.PNG)
 
 ### 🔹 Add Student
-![Add Student](images/add.png)
+![Add Student](images/add.PNG)
 
 ### 🔹 Display Students
-![Display](images/display.png)
+![Display](images/display.PNG)
 
 ### 🔹 Update Student
-![Update](images/update.png)
+![Update](images/update.PNG)
 
 ### 🔹 Delete Student
-![Delete](images/delete.png)
+![Delete](images/delete.PNG)
 
 ### 🔹 Clear All Data
-![Clear](images/clear.png)
+![Clear](images/clear.PNG)
 
 ---
 
