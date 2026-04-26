@@ -99,6 +99,27 @@ clearing the entire student database with a single action.
 Controls the program using a menu system.
 
 ---
+## 🖼️ Output Screenshots
+
+### 🔹 Main Menu
+![Main Menu](images/menu.png)
+
+### 🔹 Add Student
+![Add Student](images/add.png)
+
+### 🔹 Display Students
+![Display](images/display.png)
+
+### 🔹 Update Student
+![Update](images/update.png)
+
+### 🔹 Delete Student
+![Delete](images/delete.png)
+
+### 🔹 Clear All Data
+![Clear](images/clear.png)
+
+---
 
 ## ▶️ How to Run
 
